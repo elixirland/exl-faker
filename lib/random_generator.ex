@@ -1,0 +1,3 @@
+defmodule RandomGenerator do
+
+end
