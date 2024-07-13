@@ -136,13 +136,13 @@ defmodule RandomGenerator.Paragraphs do
   }
   @paragraph_count tuple_size(@paragraphs)
 
-  def take_random_paragraphs(count) do
-    Enum.map(1..count, fn _ -> random_paragraph() end)
-  end
-
   def concat_random_paragraphs(count) do
     take_random_paragraphs(count)
     |> Enum.join("\n")
+  end
+
+  defp take_random_paragraphs(count) do
+    Enum.map(1..count, &random_paragraph/0)
   end
 
   defp random_paragraph() do
