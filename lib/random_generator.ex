@@ -1,4 +1,11 @@
 defmodule RandomGenerator do
+  @moduledoc """
+  A public API for generating random content (e.g., book titles and page content) for Elixirland assignments.
+
+  ## Purpose
+  This public API is intended to be used for implementations of Elixirland assignments. It provides a way to generate random content that is required for some of the assignments.
+  """
+
   alias RandomGenerator.{Titles, Paragraphs}
 
   @default_count 10
@@ -18,6 +25,7 @@ defmodule RandomGenerator do
       #=> ["1984", "The Lazy Dog", "On the Road"]
 
   """
+
   def generate_titles(opts \\ []) do
     Titles.get_many_random_titles(
       Keyword.get(opts, :count, @default_count)
