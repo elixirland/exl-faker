@@ -142,7 +142,7 @@ defmodule RandomGenerator.Paragraphs do
   end
 
   defp take_random_paragraphs(count) do
-    Enum.map(1..count, &random_paragraph/0)
+    Enum.map(1..count, fn _ -> random_paragraph() end)
   end
 
   defp random_paragraph() do
