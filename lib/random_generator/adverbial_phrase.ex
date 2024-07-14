@@ -1,4 +1,4 @@
-defmodule ExLGenerator.AdverbialPhrase do
+defmodule ExLFaker.AdverbialPhrase do
   @moduledoc false
 
   # Only adverbial phrases of time and place are included, as they are more likely to make sense when concatenated onto a noun. However, noun + adverbial phrase combinations are still not guaranteed to make sense. That is considered not to be a problem, as the goal is to generate random titles, not meaningful ones.

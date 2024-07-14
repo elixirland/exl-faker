@@ -1,4 +1,4 @@
-defmodule ExLGenerator.Adjective do
+defmodule ExLFaker.Adjective do
   @moduledoc false
 
   @adjectives {

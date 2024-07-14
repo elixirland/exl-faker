@@ -1,4 +1,4 @@
-defmodule ExLGenerator.Noun do
+defmodule ExLFaker.Noun do
   @moduledoc false
 
   @nouns {

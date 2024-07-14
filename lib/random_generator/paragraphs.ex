@@ -1,4 +1,4 @@
-defmodule ExLGenerator.Paragraphs do
+defmodule ExLFaker.Paragraphs do
   @moduledoc false
 
   @paragraphs {

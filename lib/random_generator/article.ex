@@ -1,4 +1,4 @@
-defmodule ExLGenerator.Article do
+defmodule ExLFaker.Article do
   @moduledoc false
 
   @articles {"a", "the"}
