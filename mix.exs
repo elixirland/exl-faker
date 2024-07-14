@@ -51,7 +51,7 @@ defmodule RandomGenerator.MixProject do
 
   defp docs do
     [
-      main: "ExL Generator",
+      main: "readme",
       source_ref: "v#{@source_url}",
       source_url: @source_url,
       extras: ["README.md", "CHANGELOG.md"]
