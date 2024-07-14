@@ -146,7 +146,7 @@ defmodule RandomGenerator.Paragraphs do
   end
 
   defp random_paragraph() do
-    random_index = :rand.uniform(@paragraph_count - 1)
+    random_index = :rand.uniform(@paragraph_count) - 1
     elem(@paragraphs, random_index)
   end
 end

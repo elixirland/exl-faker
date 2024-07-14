@@ -14,6 +14,17 @@ defmodule RandomGeneratorTest do
 
       assert length(result) == 5
     end
+
+    test "returns titles that are in start case" do
+      result = RandomGenerator.generate_titles(count: 1)
+
+      assert Enum.all?(result, fn title ->
+        Enum.all?(
+          String.split(title, " "),
+          fn word -> word == String.capitalize(word) end
+        )
+      end)
+    end
   end
 
   describe "generate_pages/1" do

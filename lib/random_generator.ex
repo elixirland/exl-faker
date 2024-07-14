@@ -6,7 +6,8 @@ defmodule RandomGenerator do
   This public API is intended to be used for implementations of Elixirland assignments. It provides a way to generate random content that is required for some of the assignments.
   """
 
-  alias RandomGenerator.{Titles, Paragraphs}
+  alias RandomGenerator.{Paragraphs}
+  import RandomGenerator.{Article, Adjective, Noun, AdverbialPhrase}
 
   @default_count 10
 
@@ -21,15 +22,33 @@ defmodule RandomGenerator do
 
   ## Examples
 
-      RandomGenerator.generate_titles(count: 3)
-      #=> ["1984", "The Lazy Dog", "On the Road"]
+      RandomGenerator.generate_titles(count: 2)
+      #=> ["A Detailed Jelly", "Wrong Necktie"]
 
   """
 
   def generate_titles(opts \\ []) do
-    Titles.get_many_random_titles(
-      Keyword.get(opts, :count, @default_count)
-    )
+    count = Keyword.get(opts, :count, @default_count)
+
+    for _ <- 1..count, do: build_title()
+  end
+
+  defp build_title() do
+    []
+    |> prepend_random_article(probability: 0.5)
+    |> prepend_random_adjective()
+    |> prepend_random_noun()
+    |> prepend_random_adverbial_phrase(probability: 0.3)
+    |> Enum.reverse()
+    |> Enum.join(" ")
+    |> to_start_case()
+  end
+
+  defp to_start_case(binary) do
+    binary
+    |> String.split(" ")
+    |> Enum.map(&String.capitalize/1)
+    |> Enum.join(" ")
   end
 
   @doc """
