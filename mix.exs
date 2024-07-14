@@ -1,12 +1,12 @@
 defmodule RandomGenerator.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/elixirland/random-generator"
+  @source_url "https://github.com/elixirland/exl-generator"
   @version "0.1.0"
 
   def project do
     [
-      app: :random_generator,
+      app: :exl_generator,
       version: @version,
       elixir: "~> 1.11",
       deps: deps(),
@@ -18,8 +18,8 @@ defmodule RandomGenerator.MixProject do
       package: package(),
 
       # Docs
-      docs: docs(),
-      name: "Random Generator"
+      name: "ExL Generator",
+      docs: docs()
     ]
   end
 
@@ -51,7 +51,7 @@ defmodule RandomGenerator.MixProject do
 
   defp docs do
     [
-      main: "RandomGenerator",
+      main: "ExL Generator",
       source_ref: "v#{@source_url}",
       source_url: @source_url,
       extras: ["README.md", "CHANGELOG.md"]
