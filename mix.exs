@@ -12,6 +12,7 @@ defmodule RandomGenerator.MixProject do
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
+      homepage_url: "https://elixirland.dev",
 
       # Hex
       description: "Generate random content for Elixirland assignments",
@@ -33,7 +34,7 @@ defmodule RandomGenerator.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.19", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.24", only: :docs}
     ]
   end
 
