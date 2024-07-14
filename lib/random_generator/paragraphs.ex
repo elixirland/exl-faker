@@ -1,4 +1,4 @@
-defmodule RandomGenerator.Paragraphs do
+defmodule ExLGenerator.Paragraphs do
   @moduledoc false
 
   @paragraphs {
@@ -132,7 +132,7 @@ defmodule RandomGenerator.Paragraphs do
     ~s|One evening, as the sun dipped below the horizon, casting a golden hue over the village, Elara felt a strange disturbance in the air. She followed the sensation, her heart pounding with a mixture of curiosity and dread, until she reached the edge of the forest. There, standing among the shadows, was a figure cloaked in black, his presence sending a chill down her spine.|,
     ~s|"Who are you?" Elara demanded, her voice steady despite the fear gnawing at her insides.|,
     ~s|The figure stepped forward, revealing piercing blue eyes that seemed to see through her very soul. "I am Kael," he said, his voice a deep, resonant whisper. "A wanderer, drawn to this place by a force I cannot explain."|,
-    ~s|Elara's instincts told her to be wary, but something about Kael's gaze held her captive. "What do you want?" she asked, her fingers twitching at her side, ready to summon her magic if needed."|,
+    ~s|Elara's instincts told her to be wary, but something about Kael's gaze held her captive. "What do you want?" she asked, her fingers twitching at her side, ready to summon her magic if needed."|
   }
   @paragraph_count tuple_size(@paragraphs)
 

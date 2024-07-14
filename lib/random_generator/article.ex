@@ -1,6 +1,6 @@
-defmodule RandomGenerator.Article do
+defmodule ExLGenerator.Article do
   @moduledoc false
-  
+
   @articles {"a", "the"}
   @article_count tuple_size(@articles)
   @default_probability 0.5

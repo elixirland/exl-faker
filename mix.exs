@@ -1,4 +1,4 @@
-defmodule RandomGenerator.MixProject do
+defmodule ExLGenerator.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/elixirland/exl-generator"
