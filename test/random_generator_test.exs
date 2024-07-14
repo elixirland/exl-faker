@@ -41,7 +41,7 @@ defmodule RandomGeneratorTest do
       assert length(result) == 8
     end
 
-    test "returns pages that contains 5 paragraphs separated by a newline" do
+    test "returns pages that contains multiple paragraphs separated by a newline" do
       result = RandomGenerator.generate_pages(count: 1)
 
       assert Enum.all?(result, fn page ->
