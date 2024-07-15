@@ -1,4 +1,4 @@
-# Elixirland Faker
+# Xl Faker
 This package allows users to generates random data (e.g., book titles and page texts) that they can use in their implementations of Elixirland assignments.
 
 Read more about Elixirland at https://github.com/elixirland.
