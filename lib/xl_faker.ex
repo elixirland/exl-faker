@@ -12,6 +12,21 @@ defmodule XlFaker do
   @default_count 10
 
   @doc """
+  Generates a random title.
+
+  ## Returns
+  Returns a string.
+
+  ## Examples
+
+      XlFaker.generate_title()
+      #=> "A Detailed Jelly"
+
+  """
+
+  def generate_title(), do: build_title()
+
+  @doc """
   Generates a list of random titles.
 
   ## Returns
@@ -50,6 +65,21 @@ defmodule XlFaker do
     |> Enum.map(&String.capitalize/1)
     |> Enum.join(" ")
   end
+
+  @doc """
+  Generates a random page.
+
+  ## Returns
+  Returns a string containing 5 random paragraphs. Paragraphs are separated by a single newline (`\\n`).
+
+  ## Examples
+
+      XlFaker.generate_page()
+      #=> "The forest was alive with the sounds of nature. ..."
+      
+  """
+
+  def generate_page(), do: Paragraphs.concat_random_paragraphs(5)
 
   @doc """
   Generates a list of random pages.

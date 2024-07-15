@@ -1,5 +1,5 @@
 # Xl Faker
-This package allows users to generates random data (e.g., book titles and page texts) that they can use in their implementations of Elixirland assignments.
+This package allows users to generate random data (e.g., book titles and page texts) that they can use in their implementations of Elixirland assignments.
 
 Read more about Elixirland at https://github.com/elixirland.
 
@@ -9,9 +9,15 @@ The public API if this package is contained in the `XlFaker` module. It exposes 
 ### Examples
 
 ```
+XlFaker.generate_title()
+#=> "A Large Home"
+
+XlFaker.generate_page()
+#=> "For the first time since..."
+
 XlFaker.generate_titles(count: 4000)
 #=> ["Third Lamp", "A Polite Kite", ...]
 
 XlFaker.generate_pages(count: 10)
-#=> ["As she worked, Emily thought" ..., ...]
+#=> ["As she worked, Emily thought...", ...]
 ```
