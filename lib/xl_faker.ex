@@ -1,4 +1,4 @@
-defmodule ExLFaker do
+defmodule XlFaker do
   @moduledoc """
   A public API for generating random content (e.g., book titles and page content) for Elixirland assignments.
 
@@ -6,8 +6,8 @@ defmodule ExLFaker do
   This public API is intended to be used for implementations of Elixirland assignments. It provides a way to generate random content that is required for some of the assignments.
   """
 
-  alias ExLFaker.{Paragraphs}
-  import ExLFaker.{Article, Adjective, Noun, AdverbialPhrase}
+  alias XlFaker.{Paragraphs}
+  import XlFaker.{Article, Adjective, Noun, AdverbialPhrase}
 
   @default_count 10
 
@@ -22,7 +22,7 @@ defmodule ExLFaker do
 
   ## Examples
 
-      ExLFaker.generate_titles(count: 2)
+      XlFaker.generate_titles(count: 2)
       #=> ["A Detailed Jelly", "Wrong Necktie"]
 
   """
@@ -62,7 +62,7 @@ defmodule ExLFaker do
 
   ## Examples
 
-      ExLFaker.generate_pages(count: 2)
+      XlFaker.generate_pages(count: 2)
       #=> ["The forest was alive with the sounds of nature. ...", "Excuse me, are you Amelia Rivers? ..."]
 
   """

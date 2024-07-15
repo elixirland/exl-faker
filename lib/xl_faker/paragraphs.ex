@@ -1,4 +1,4 @@
-defmodule ExLFaker.Paragraphs do
+defmodule XlFaker.Paragraphs do
   @moduledoc false
 
   @paragraphs {

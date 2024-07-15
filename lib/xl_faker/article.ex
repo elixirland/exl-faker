@@ -1,4 +1,4 @@
-defmodule ExLFaker.Article do
+defmodule XlFaker.Article do
   @moduledoc false
 
   @articles {"a", "the"}

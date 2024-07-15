@@ -1,12 +1,12 @@
-defmodule ExLFaker.MixProject do
+defmodule XlFaker.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/elixirland/exl-generator"
+  @source_url "https://github.com/elixirland/xl-faker"
   @version "0.1.0"
 
   def project do
     [
-      app: :exl_generator,
+      app: :xl_faker,
       version: @version,
       elixir: "~> 1.11",
       deps: deps(),
@@ -19,7 +19,7 @@ defmodule ExLFaker.MixProject do
       package: package(),
 
       # Docs
-      name: "ExL Generator",
+      name: "Xl Faker",
       docs: docs()
     ]
   end

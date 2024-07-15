@@ -1,22 +1,22 @@
-defmodule ExLFakerTest do
+defmodule XlFakerTest do
   use ExUnit.Case, async: true
 
   describe "generate_titles/1" do
     test "returns a list of titles as strings" do
-      result = ExLFaker.generate_titles()
+      result = XlFaker.generate_titles()
 
       assert is_list(result)
       assert Enum.all?(result, &is_binary/1)
     end
 
     test "returns the requested number of titles" do
-      result = ExLFaker.generate_titles(count: 5)
+      result = XlFaker.generate_titles(count: 5)
 
       assert length(result) == 5
     end
 
     test "returns titles that are in start case" do
-      result = ExLFaker.generate_titles(count: 1)
+      result = XlFaker.generate_titles(count: 1)
 
       assert Enum.all?(result, fn title ->
                Enum.all?(
@@ -29,20 +29,20 @@ defmodule ExLFakerTest do
 
   describe "generate_pages/1" do
     test "returns a list of pages as strings" do
-      result = ExLFaker.generate_pages()
+      result = XlFaker.generate_pages()
 
       assert is_list(result)
       assert Enum.all?(result, &is_binary/1)
     end
 
     test "returns the requested number of pages" do
-      result = ExLFaker.generate_pages(count: 8)
+      result = XlFaker.generate_pages(count: 8)
 
       assert length(result) == 8
     end
 
     test "returns pages that contains multiple paragraphs separated by a newline" do
-      result = ExLFaker.generate_pages(count: 1)
+      result = XlFaker.generate_pages(count: 1)
 
       assert Enum.all?(result, fn page ->
                paragraphs = String.split(page, "\n")

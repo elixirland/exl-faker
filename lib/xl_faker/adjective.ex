@@ -1,4 +1,4 @@
-defmodule ExLFaker.Adjective do
+defmodule XlFaker.Adjective do
   @moduledoc false
 
   @adjectives {

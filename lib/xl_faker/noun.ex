@@ -1,4 +1,4 @@
-defmodule ExLFaker.Noun do
+defmodule XlFaker.Noun do
   @moduledoc false
 
   @nouns {
